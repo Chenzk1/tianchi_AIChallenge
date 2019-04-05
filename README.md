@@ -11,6 +11,7 @@
 - code：自己的尝试
 - 鱼佬baseline：(https://zhuanlan.zhihu.com/p/59998657)
 - solution_A_22: A榜22
+- solution_B_42
 - solution_B_52: B榜52
 - solution_A_58: (https://mp.weixin.qq.com/s/hzc6u1WYu8ztaRa4m371tw)
 - solution_B_59: (https://zhuanlan.zhihu.com/p/61145712)
@@ -32,8 +33,12 @@
 > * 对应代码：./feature/generate_data.py、model_lgb.py
 > * 基于历史10分钟为单位的刷卡类型(四种)人数进行建模，同理通过提取特征和对应标签构建模型，最后计算四种刷卡总人数和即为当前时间单位的流量；线上成绩为：12.5173
 > * 对应代码：./feature/generate_data1.py、model_lgb1.py
+> 
+> * generate_weather.py 对天气和温度对应的ONE-HOT数据进行SVD降维；
+> * generate_roadMap.py 对给出的地铁连通图进行SVD\NMF降维，并统计连通的地铁站点。
 
 * 即第一个模型与baseline相同，而第二个模型在进行特征构造时，在id中加入了PayType的特征
+* 特征中加入了天气和地图特征
 ## A_58
 
 - EDA
